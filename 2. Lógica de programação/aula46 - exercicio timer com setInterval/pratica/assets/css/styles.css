@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --background-color: rgb(32, 38, 46);
+    --primary-color: rgb(145, 49, 117);
+    --accent-color: rgb(205, 88, 136);
+    --white-color: rgb(233, 232, 232);
+    --black-color: rgb(0, 0, 0);
+}
+
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    background: var(--primary-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    color: white;
+    border-radius: 50%;
+}
+
+.relogio {
+    font-size: 35px;
+    margin: 0 0 25px 0;
+}
+
+.pausado {
+    color: var(--black-color);
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--accent-color);
+    cursor: pointer;
+    height: 30px;
+    width: 45px;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
